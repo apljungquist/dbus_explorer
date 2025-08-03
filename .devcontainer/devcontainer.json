@@ -1,0 +1,17 @@
+{
+    "name": "acap-rs-app-template",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {},
+        "ghcr.io/devcontainers/features/node:1": {
+      "nodeGitTagVersion": "lts"
+    }
+    },
+    "postCreateCommand": {
+        "claude":"npm install -g @anthropic-ai/claude-code@latest"
+    },
+    "remoteUser": "${localEnv:USER}"
+}
