@@ -3,7 +3,8 @@
     "allow": [
       "Bash(acap-ssh-utils:*)",
       "Bash(cargo-acap-sdk:*)",
-      "Bash(cargo-acap-build:*)"
+      "Bash(cargo-acap-build:*)",
+      "Bash(make:*)"
     ],
     "deny": []
   }

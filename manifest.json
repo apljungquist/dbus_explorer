@@ -1,0 +1,33 @@
+{
+    "schemaVersion": "1.7.0",
+    "acapPackageConf": {
+        "setup": {
+            "appName": "dbus_explorer",
+            "runMode": "never",
+            "vendor": "None",
+            "version": "0.0.0"
+        },
+        "configuration": {
+            "httpConfig": [
+                {
+                    "access": "viewer",
+                    "type": "directory"
+                }
+            ],
+            "reverseProxy": [
+                {
+                    "apiPath": "app",
+                    "target": "http://localhost:2001",
+                    "access": "viewer"
+                }
+            ],
+            "settingPage": "app"
+        }
+    },
+    "resources": {
+        "dbus": {
+            "requiredMethods": [
+            ]
+        }
+    }
+}
